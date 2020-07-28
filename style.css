@@ -367,7 +367,7 @@ nav ul li a:hover{
 /*Footer section*/
 
 footer{
-    height:300px;
+    height:3it 00px;
     width: 100%;
     background-color: #171718;
     font-size: 18px;
@@ -377,6 +377,7 @@ footer{
     justify-content: center;
     align-items: center;
     position: relative;
+    color: #fff;
    
 }
 
