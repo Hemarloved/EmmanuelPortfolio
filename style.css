@@ -1,57 +1,76 @@
 body{
-    background: #1a1919;
+    background:rgb(24, 19, 19);
     margin: 0;
     padding:0;
   
   }
   
-   .logo {
-       text-decoration: none;
+   /*.logo {
+       position: relative;;
+       float: right;
        color:Blue;
-      font-size: 22px;
+      font-size: 2px;
       font-weight: bold;
       font-family: sans-serif;
-      margin:15px;
+    
    
-      }
-       
-   li{
-       list-style-type: none;
-       display: inline;
-       padding:10px;
-   }
-   
-      nav{
-          display: flex;
-          position: relative;;
+      }*/
+      
+      .nav{
+        
+          position: relative;
+          text-align: right;
           top:0px;
           width:100%;
-          justify-content: space-between ;
           align-items: center;
-          height:60px;
+          line-height: 60px;
+          height:70px;
           background-color: rgb(95, 93, 93);;
           box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
           z-index: 1;
   
       }
   
-  nav ul li a{
-          font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  .menu{
+          font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
           color:#fff;
-          font-size: 15px;
+          font-size: 16px;
           font-weight: 700;
-          margin: 30px;
+          width: 100%;
           text-decoration: none;
+      }
+      .menu a{
+        list-style-type: none;
+        text-decoration: none;
+        display: inline;
+        padding:20px;
+        color: #fff;
+        margin: 0 10px;
+        line-height: 70px;
+        transition: 0.5s ease-in;
+
+    }
+     
+      label{
+          margin: 0 40px 0 0;
+          font-size: 25px;
+          line-height: 60px;
+          color: rgb(226, 84, 226);
+          display: none;
+      }
+
+      #toggle{
+          display:none ;
+          margin: 0px;
       }
 
 .active{
         font-weight: bold;
         color: #2d2a2a;
     } 
-nav ul li a:hover{
-         transition: 0.5s ease-in;
-         opacity: 0.7;
-         background-color:burlywood ;
+.menu a:hover{
+                
+         color:#000;
      }
 
      /*This is for the first container of text*/
@@ -155,10 +174,12 @@ nav ul li a:hover{
    .tc button {
     background-color: #000;
     text-decoration: none;
+    
    }
    .tc button a{
        text-decoration: none;
        font-size: 20px;
+       color: #0000ee;
    }
  .button:active{
     transform: scale(1.1);
@@ -359,11 +380,6 @@ nav ul li a:hover{
 
 
 
-.box-container p{
-  
-}
-
-
 /*Footer section*/
 
 footer{
@@ -384,8 +400,10 @@ footer{
 footer p:nth-child(1){
     font-size: 25px;
     font-weight: bold;
+    color: black;
     
 }
+
 
 footer p:nth-child(2){
     font-size: 18px;
@@ -459,11 +477,46 @@ background-color:#25D366;
 }
 
 @media screen and (max-width:900px){
-    nav ul{
+    label{
+        display: block;
+        cursor: pointer;
+        float: right;
+        line-height: 70px;
+       
+    }
+    label:hover{
+        color:#fff;
+    }
+    #toggle{
+        display: none;
+    }
+    .menu {
+        text-align: center;
+        width: 90%;
+        height: 100%;
+        display: none;
+        box-sizing: border-box;
+        
+    }
+     .menu a{
+         clear: right;
+        display: block;
+        border: 1px solid rgb(44, 1, 44);
+        background-color: #000;  
+    
+     }
+     .menu a:hover{
+        color:purple;
+     }
+
+     #toggle:checked + .menu{
+         display: block;
+     }
+   
+    /* nav ul{
         margin: 0px;
         padding: 0px;
-        width:90%;
-        display: flex;
+        
         top:0px;
         left:0px;
         position: ;
@@ -486,7 +539,7 @@ background-color:#25D366;
        display: flex;
        
        
-    }
+    }*/
    
    
     .container{
@@ -582,7 +635,7 @@ footer p:nth-child(2){
 
 @media screen and (max-width:600px){
     
-    .tc button a{
+    /*.tc button a{
         color:pink;
     }
     nav ul{
@@ -603,7 +656,7 @@ footer p:nth-child(2){
 
     nav ul li a{
         color:blue
-    }
+    }*/
 
     .trend{
         display: flex;
@@ -618,14 +671,13 @@ footer p:nth-child(2){
         
         position: absolute;
         left:48%;
-        top:40%;
+        top:50%;
         transform: translate(-50%,-50%);
-        margin-top: 50px;
         border-radius: 10px;
         width: 100%;
         margin-bottom: 20px;
-        
-        
+    
+  
     
     }
     .text-container p:nth-child(2){
@@ -634,14 +686,13 @@ footer p:nth-child(2){
 
   }
   .text-container p:nth-child(3){
-      font-size: 4vw;
+      font-size:4vw;
+      line-height: 1px;
+      margin-left: 3px;
       width: 100%;
     }
   
-    .about-text h3{
 
-        font-size: 30px;
-    }
 
     .about-container{
        /* display: flex;
@@ -657,7 +708,7 @@ footer p:nth-child(2){
         position: relative;;
         margin-top: 20px;
         line-height: 30px;
-        font-size: 16px;
+        font-size: 25px;
 
     }
     .about-text h3{
@@ -673,8 +724,7 @@ footer p:nth-child(2){
         justify-content: center;
         line-height: 40px;
         font-size: 20px;
-        
-       }
+    }
   .box-container{
         display: flex;
         flex-direction: column;
