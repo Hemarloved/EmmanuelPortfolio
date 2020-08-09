@@ -181,8 +181,12 @@ body{
        font-size: 20px;
        color: #0000ee;
    }
- .button:active{
+   .tc button a:hover{
+       color: #fff;
+   }
+ .tc button :hover{
     transform: scale(1.1);
+
 }
 
 /*Next Section for About myself*/
@@ -190,7 +194,7 @@ body{
     width: 80%;
     height:400px;
     position: absolute;
-    margin-top: -90px;
+    margin-top: -60px;
     background-color: rgba(204, 199, 199, 0.216);
     border-radius: 20px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
@@ -250,6 +254,17 @@ body{
      color: whitesmoke;
      font-weight: bold;
      cursor: pointer;
+     transition: .6s;
+ }
+ .abt:hover{
+     transform: scale(1.2);
+ }
+ .abt a{
+     text-decoration: none;
+     color: black;
+ }
+ .abt a:hover{
+     color:#603f83ff;
  }
 
  /* THE BOX for project*/
