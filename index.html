@@ -37,7 +37,7 @@
                     </div>
                     <div class="tc">
                         <p>Hello,</p>
-                        <p>My name is Emmanuel</p>
+                        <p class="emmy">My name is <span>Emmanuel</span></p>
                         <p>I am a Software Developer.I love to code</p>
                         <div class="buts">
                         <button><a href="mailto://emmymanuel14@gmail.com">Hire me</a></button>
@@ -91,7 +91,7 @@
                     
                     <!--<p class="heading">Front-end</p>
                     <p class="details">For your web development projects. check out this Hotel's webpage. Maybe you may want to pay a visit.</p>-->
-                    <a class ="touch" href= "#" <!--"https://hemarloved.github.io/Standford-Hotel/"-->Standford-Hotel</a>
+                    <a class ="touch" href= "https://hemarloved.github.io/Standford-Hotel">Standford-Hotel</a>
                 </div>
                 
             </div>
@@ -111,17 +111,15 @@
                     &copy; HemarCodes | BeYou
                 </div>
             </footer>
-            
 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+            <script>
 
+                gsap.from('.text-container',{opacity:0, duration:1, y:-50});
+                gsap.from('.trend',{opacity:0, duration:1, y:-30})
 
+            </script>
 
-
-
-     
-          
-                    
-    
     <script src="script.js"></script>
 </body>
 </html>
