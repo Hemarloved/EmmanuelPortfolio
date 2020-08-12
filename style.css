@@ -499,6 +499,7 @@ background-color:#25D366;
     position: absolute;
     bottom:0px;
     left: 0px;
+    font-size: 14px;
     padding-top: 10px;
     line-height: 10px;
     text-align: center;
@@ -658,7 +659,10 @@ footer p:nth-child(2){
     color: white;
     line-height: 20px;
     text-align: center;   
-}   
+}  
+.footer-bottom{
+    font-size: 12px;
+} 
 }
 
 @media screen and (max-width:600px){
@@ -785,8 +789,6 @@ footer p:nth-child(2){
       color: black;
   } 
   
-  
-  
     
   footer p:nth-child(2){
     font-size: 14px;
@@ -794,6 +796,10 @@ footer p:nth-child(2){
     line-height: 20px;
     text-align: center;   
 }   
+
+.footer-bottom{
+    font-size: 12px;
+}
 
  
 }
