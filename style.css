@@ -25,11 +25,137 @@ body{
           align-items: center;
           line-height: 60px;
           height:70px;
-          background-color: #581b98;
+          background-color:rgb(78, 77, 77);
           box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
           z-index: 1;
   
       }
+
+      #greeters{
+        color:rgb(207, 203, 203);
+          margin:10px 10px;
+          font-size: 25px;
+      }
+    
+
+      .round{
+          position: absolute; 
+          height:300px;
+          width: 300px;
+          border-radius: 50%;
+          left: 53%;
+          top:20%;
+          border: none;
+          color: black;
+          background:linear-gradient(#14ffe9, #ffeb3b,#ff00e0); 
+          animation: animate 0.5s linear infinite;
+          /*background: linear-gradient(45deg,#14ffe9, rgb(162, 126, 235), rgb(139, 138, 138), grey, rgb(35, 35, 156));*/
+          
+      }
+      /*
+      @keyframes animate{
+          from{
+              transform: rotate(0deg);
+          }
+          to{
+              transform: rotate(360deg);
+          }
+      }*/
+      
+      .round:after{
+            
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            bottom: 25px;
+            right: 25px;
+            border-radius: 50%;
+            background-color: rgb(102, 92, 156);  
+        
+            
+      }
+
+      #roo{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background:linear-gradient(#14ffe9, #ffeb3b,#ff00e0);
+        
+        /*background: linear-gradient( rgb(150, 145, 160), rgb(139, 138, 138), grey, rgb(35, 35, 156));*/
+      
+      }
+
+      #roo:nth-child(1){
+          filter:  blur(5px);
+        
+      }
+      #roo:nth-child(2){
+           filter: blur(10px);
+           
+      }
+      #roo:nth-child(3){
+        filter: blur(20px);
+        
+      }
+      #roo:nth-child(4){
+        filter: blur(50px);
+      }
+    
+      /*barba.js section*/
+      .wrapper{
+          padding: 1em;
+      }
+      .wrapper a {
+          color: #fff;
+          text-decoration: none;
+          padding: 20px;
+          font-size: 20px;
+      }
+      .wrapper h1{
+          color: violet;
+          font-size: 3em;
+      }
+      .wrapper .cta{
+          display: block;
+          padding: 2em 2em 2em 0;
+          font-size: 1.4em;
+      }
+
+      .wrapper img{
+          width: 100%;
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+
+      ul{
+          list-style: none;
+          display: flex;
+          padding: 0;
+          margin-right: 0 auto;
+      }
+      
+      ul .transition{
+          display: flex;
+          position: absolute;
+          z-index: 10;
+          height: 100vh;
+          width: 100%;
+          top: 0;
+          left: 0;
+          margin: 0;
+          pointer-events: none;
+      }
+       ul .transition li{
+           transform: scaleY(0);
+           background-color: yellow;
+           width: 20%;
+       }
+
+
+    /* BArba.js ends here*/
+
+
   
   .menu{
           font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -55,7 +181,7 @@ body{
           margin: 0 40px 0 0;
           font-size: 25px;
           line-height: 60px;
-          color: rgb(226, 84, 226);
+          color: rgb(162, 132, 184);
           display: none;
       }
 
@@ -68,14 +194,12 @@ body{
         font-weight: bold;
         color: #2d2a2a;
     } 
-.menu a:hover{
-                
-         color:#000;
+.menu a:hover{        
+         color:mediumslateblue;
      }
 
      /*This is for the first container of text*/
      .container{
-        background:;
         width:100%;
         height: 500px;
      }
@@ -122,7 +246,7 @@ body{
 .text-container p:nth-child(1){
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    color:blueviolet;
+    color:rgb(86, 66, 117);
     font-size: 35px;
     text-align: center;
     
@@ -139,26 +263,29 @@ body{
   .text-container p:nth-child(3){
       font-family: 'Courier New', Courier, monospace;
       font-weight: bolder;
-      color:rgb(86, 48, 121);
+      color:rgb(211, 41, 160);
       font-weight: bolder;
       font-size: 20px;
       text-align: center;       
     }
     .tc p span{
-        color:;
     }
+    
     .tc p{
         line-height: 20px;
     }
     span{
         opacity: 0;
         transition: all 1s  ease;
-        
-        
+        color: red;  
+
     }
     span.fade{
         opacity: 1;
         color: #fff;
+    }
+    #bak{
+        background: #000;
     }
 
   .text-container p{
@@ -177,7 +304,7 @@ body{
       margin: 10px;
    }
    .buts{
-       color: pink;
+       
        margin-top: 0px;
        display: flex;
        justify-content: center;
@@ -185,23 +312,25 @@ body{
     
    }
    .tc button {
-    background-color: #000;
+    background-color: #fff;
     text-decoration: none;
     
    }
    .tc button a{
        text-decoration: none;
        font-size: 20px;
-       color: #7812e6;
+       color: #110f10;
    }
    .tc button a:hover{
-       color: #fff;
+       color:#fff;
+    
    }
  .tc button :hover{
     transform: scale(1.1);
-
 }
-
+.tc button:hover{
+    background-color: indigo;
+}
 /*Next Section for About myself*/
 .about-container{
     width: 80%;
@@ -288,7 +417,7 @@ body{
     height:500px;
     align-items: center;
     justify-content: center;
-    margin-top: 40%;
+    margin-top: 43%;
     background-color: rgb(46, 41, 41);
     transition: .6s;
    
@@ -299,7 +428,7 @@ body{
     flex-direction: column-reverse;    
     position: absolute;
     font-size: 25px;
-    margin-top: -36%;
+    margin-top: -40%;
     margin-left: -20px;
     color: #fff;
     
@@ -420,7 +549,7 @@ footer{
     line-height: 5px;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     color: #fff;
    
 }
@@ -428,7 +557,7 @@ footer{
 footer p:nth-child(1){
     font-size: 25px;
     font-weight: bold;
-    color: #9c1de7;
+    color: #9a76af;
     
 }
 
@@ -498,8 +627,8 @@ background-color:#25D366;
     width:100%;
     position: absolute;
     bottom:0px;
-    left: 0px;
-    font-size: 14px;
+    ;
+    font-size: 14kpx;
     padding-top: 10px;
     line-height: 10px;
     text-align: center;
@@ -535,12 +664,13 @@ background-color:#25D366;
     
      }
      .menu a:hover{
-        color:purple;
+        color:rgb(149, 14, 245);
      }
 
      #toggle:checked + .menu{
          display: block;
      }
+     
    
     /* nav ul{
         margin: 0px;
@@ -643,14 +773,15 @@ hr{
     display:flex;
     flex-direction: column-reverse;    
     position: absolute; 
-    margin-top: -57%;
     justify-content: center;
     align-content: center;
     color: #fff;
+   
     
 }
 .box-text p{
     font-size: 25px;
+    margin-top: -29%;
 }
 
 
@@ -666,6 +797,19 @@ footer p:nth-child(2){
 }
 
 @media screen and (max-width:600px){
+    
+    #greeters{
+        float:right;
+        color:rgb(207, 203, 203);
+    }
+    .round{
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+        left:3%;
+        top: 25%;
+        opacity: .1;
+    }
     
     /*.tc button a{
         color:pink;
@@ -689,6 +833,24 @@ footer p:nth-child(2){
     nav ul li a{
         color:blue
     }*/
+
+    .tc button:nth-child(1){
+        background-color: indigo;   
+    }
+    .buts button a:nth-child(1){
+        color: #fff;
+    }
+    #my{
+        color: #000;
+    }
+
+    #greeters{
+        font-size: 18px;
+    
+    }
+
+
+    
 
     .trend{
         display: flex;
