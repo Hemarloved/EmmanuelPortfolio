@@ -47,6 +47,7 @@ body{
           top:20%;
           border: none;
           color: black;
+          opacity: 0.2;
           background:linear-gradient(#14ffe9, #ffeb3b,#ff00e0); 
           animation: animate 0.5s linear infinite;
           /*background: linear-gradient(45deg,#14ffe9, rgb(162, 126, 235), rgb(139, 138, 138), grey, rgb(35, 35, 156));*/
