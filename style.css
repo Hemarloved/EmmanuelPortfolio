@@ -467,17 +467,23 @@ body{
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
+    
 }
 
 .box-2{
     background: linear-gradient(-45deg, #ff0084, purple, #24292c);
     background-size: 400% 400%;
+    
     position: relative;
     animation: change 10s ease-in-out infinite;
+}
+.box-3{
+    box-shadow: 5px 10px #646161;
 }
 .box-3:hover{
     background-color: yellow;
     color: black;
+    
 }
 
 
@@ -642,6 +648,15 @@ background-color:#25D366;
         float: right;
         line-height: 70px;
        
+    }
+    .box-text{
+    
+    margin-top: -1050px;
+    }
+    .box-container{
+        display: flex;
+        height: auto;
+        flex-direction: column;
     }
     label:hover{
         color:#fff;
