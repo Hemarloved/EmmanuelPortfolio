@@ -963,7 +963,23 @@ footer p:nth-child(2){
 .footer-bottom{
     font-size: 12px;
 }
+.social-media a{
+    color: #fff;
+}
+.social-media a:nth-child(1){
+    background-color:#dd4b39;
+    }
+   
+.social-media a:nth-child(2){
+background-color:black;
+}
+.social-media a:nth-child(3){
+    background-color:#55acee;
+    }
 
+.social-media a:nth-child(4){
+background-color:#25D366;
+}
  
 }
 
