@@ -25,7 +25,7 @@ body{
           align-items: center;
           line-height: 60px;
           height:70px;
-          background:linear-gradient(45deg,#2c3e50,rgb(78, 77, 77),#34495e);
+          background:linear-gradient(45deg,#2c3e50, #5758BB,#34495e,#1B1464);
           box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
           z-index: 1;
   
@@ -263,7 +263,7 @@ body{
   .text-container p:nth-child(3){
       font-family: 'Courier New', Courier, monospace;
       font-weight: bolder;
-      color:rgb(211, 41, 160);
+      color:#FDA7DF;
       font-weight: bolder;
       font-size: 20px;
       text-align: center;       
@@ -395,7 +395,11 @@ body{
      font-size: 35px;
  }
  hr{
-     border: 2px solid burlywood;
+     border: 2px solid #000;
+     border-radius: 3px;
+     height: 2px;
+     width: 50%;
+     background: linear-gradient(45deg, #ae55d8, rgb(42, 69, 126), #24292c);
  }
 
  
@@ -407,7 +411,7 @@ body{
      border-radius: 10px;
      border: none;
      font-size: 18px;
-     background-color:burlywood;
+     background:linear-gradient(45deg, #ae55d8, rgb(42, 69, 126), #24292c);
      color: whitesmoke;
      font-weight: bold;
      cursor: pointer;
@@ -421,7 +425,7 @@ body{
      color: black;
  }
  .abt a:hover{
-     color:#603f83ff;
+     color:#fff;
  }
 
  /* THE BOX for project*/
@@ -475,6 +479,7 @@ body{
     font-size:24px;
     border-radius: 10px;
     transition: .6s; 
+    
 }
 
 .box-1{
@@ -563,7 +568,7 @@ body{
     position: absolute;
     bottom:3%;
     left:4%;
-    color: #fff;
+    color: #D980FA;
     font-weight: bold;
 }
 
@@ -674,7 +679,7 @@ background-color:black;
 background-color:#25D366;
 }
 .footer-bottom{
-    color:#ab78e2;
+    color: #D980FA;
     background-color: rgb(7, 7, 7);
     height:20px;
     width:100%;
