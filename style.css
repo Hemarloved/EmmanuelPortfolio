@@ -212,7 +212,7 @@ body{
        border-radius: 10px;
        
    }
-/* THis for the coloring of the text in the text container*/
+/* THis for the coloring of the text in the text container*//*
 .trend{
     display: flex;
     flex-direction: row;
@@ -241,7 +241,7 @@ body{
     border:2px solid none;
     background:blue;
     line-height: 50px;
-}
+}*/
 
 .text-container p:nth-child(1){
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -311,6 +311,9 @@ body{
        text-decoration: none;   
     
    }
+
+
+
    .tc button {
     background-color: #fff;
     text-decoration: none;
@@ -321,15 +324,27 @@ body{
        font-size: 20px;
        color: #110f10;
    }
-   .tc button a:hover{
-       color:#fff;
-    
-   }
  .tc button :hover{
     transform: scale(1.1);
 }
 .tc button:hover{
-    background-color:;
+    background-color:grey;
+    color: #fff;
+}
+
+.tc button:nth-child(1){
+    background-color: indigo;   
+    color: #fff;
+}
+.buts a:nth-child(1){
+    color: #fff;
+}
+
+#my{
+    color: #000;
+}
+#my:hover{
+    color:#fff
 }
 /*Next Section for About myself*/
 .about-container{
@@ -457,6 +472,7 @@ body{
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    font-size:24px;
     border-radius: 10px;
     transition: .6s; 
 }
@@ -487,7 +503,7 @@ body{
 
 
 
-/*@keyframes change {
+@keyframes change {
     0%{
         background-position: 0 50%;
     }
@@ -511,7 +527,7 @@ body{
 .box-3:hover{
     transform: translate(0, -10px);
 }
-*/
+
   .box-2 p:nth-child(3){
    color: black;
    line-height: 20px;
